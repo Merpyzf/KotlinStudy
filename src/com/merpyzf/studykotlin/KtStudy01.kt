@@ -1,6 +1,9 @@
+package com.merpyzf.studykotlin
+
 /**
  * Created by wangke on 17-5-20.
  * 无形中Kotlin的第一个HelloWorld
+ * KtStudy01 函数的定义
  *
  */
 
