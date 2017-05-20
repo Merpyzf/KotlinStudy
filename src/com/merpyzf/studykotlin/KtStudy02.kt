@@ -17,6 +17,13 @@ fun main(args: Array<String>) {
 
     println("a的值${a}")
 
+    var s = "a is $a"
+
+    var s1 = "${ s.replace("is", "是")}"
+
+    println(s)
+    println(s1)
+
 
 }
 
