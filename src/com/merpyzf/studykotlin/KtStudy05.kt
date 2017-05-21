@@ -1,9 +1,14 @@
 package com.merpyzf.studykotlin
 
+import jdk.nashorn.internal.parser.JSONParser
+import java.io.*
+import java.net.HttpURLConnection
+import java.net.URL
+import java.nio.charset.Charset
+
 /**
  * Created by wangke on 17-5-20.
  * for循环的使用
- *
  */
 
 fun main(args: Array<String>) {
@@ -42,7 +47,29 @@ fun main(args: Array<String>) {
     }
 
 
+    var file = File("/test.txt")
+
+    file.setWritable(true)
+    file.setReadable(true)
+    file.setExecutable(true)
+
+    var mIs = FileOutputStream(file,true)
+
+    val bos = BufferedOutputStream(mIs)
+
+    var str:String="10"
+
+    val toByte: ByteArray = str.toByteArray(Charsets.UTF_8)
+
+    bos.write(toByte)
+
+    bos.flush()
+
+    bos.close()
+
+
 }
+
 
 
 
