@@ -7,7 +7,12 @@ public class client {
 
     public static void main(String[] args) {
 
-        String []itmes = new String[]{"1","2"};
+
+        int a = 100;
+
+//        long b = a;
+
+        System.out.println(a==a);
 
 
 
